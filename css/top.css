@@ -1,0 +1,85 @@
+/*
+* 页面顶部区域的样式
+*/
+.top{
+    height: 70px;
+    background-color: #242424;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+}
+
+.top .topbar {
+  display: flex;;
+  justify-content: space-between;
+
+  height: 69px;
+
+  /* 由于topbar中的所有元素的文字都要居中显示，那么这个属性可以写的父一点，后续的子元素继承即可 */
+  line-height: 69px;
+}
+
+.top .topbar .bar-left {
+  display: flex;
+}
+
+.top .topbar .bar-left .logo {
+  width: 176px;
+  height: 69px;
+  background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e52adade1f4df5e242dac8537a78c78e) no-repeat 0 0;
+}
+
+.top .topbar .bar-left .logo a {
+  display: block;
+
+  /* text-indent只对block级元素生效 */
+  text-indent: -9999px;
+}
+
+.top .topbar .bar-left .top-list {
+  display: flex;
+}
+
+.top .topbar .bar-left .top-list .item {
+  position: relative;
+}
+
+.top .topbar .bar-left .top-list .item a {
+  display: inline-block;
+
+  font-size: 14px;
+  padding: 0 13px;
+  color: #ccc;
+}
+
+.top .topbar .bar-left .top-list .item i {
+  /* 标签的特殊定位 */
+  position: absolute;
+
+  top: 14px;
+  right: -10px;
+}
+
+
+/* active是选中状态的元素 */
+.top .topbar .bar-left .top-list .item:hover a,
+.top .topbar .bar-left .top-list .item.active a {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 小箭头 */
+.top .topbar .bar-left .top-list .item.active a::after {
+  content: "";
+  
+  width: 12px;
+  height: 7px;
+
+  /* 子绝父相 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  margin: 0 auto;
+
+  background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e52adade1f4df5e242dac8537a78c78e) -226px 0;
+}

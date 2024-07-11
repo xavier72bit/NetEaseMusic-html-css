@@ -1,0 +1,19 @@
+/*
+* 重置一些浏览器自己加的样式
+*/
+
+body, h1, ul, li {
+  margin: 0;
+  padding: 0;
+
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
