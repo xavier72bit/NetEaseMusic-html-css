@@ -67,7 +67,7 @@
   color: #fff;
 }
 
-/* 小箭头 */
+/* 顶部栏的小箭头效果 */
 .top .topbar .bar-left .top-list .item.active a::after {
   content: "";
   
@@ -82,4 +82,73 @@
   margin: 0 auto;
 
   background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e52adade1f4df5e242dac8537a78c78e) -226px 0;
+}
+
+.top .topbar .bar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top .topbar .bar-right .login-button a {
+  color: #787878;
+}
+
+.top .topbar .bar-right .login-button:hover a {
+  color: #999;
+}
+
+.top .topbar .bar-right .login-button a:hover {
+  color: #787878;
+  text-decoration: underline;
+}
+
+.top .topbar .bar-right .creator-button a {
+  display: inline-block;
+
+  width: 90px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 20px;
+  
+  color: #ccc;
+  text-align: center;
+  /* a里的文字居中，让line-height与height一致 */
+  line-height: 32px;
+}
+
+.top .topbar .bar-right .creator-button a:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.top .topbar .bar-right .search-ban {
+  width: 158px;
+  height: 32px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+
+  /* 把search-ban里的input元素向右推 */
+  padding-left: 25px;
+  box-sizing: border-box;
+
+  background-color: #fff;
+  background-image: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e52adade1f4df5e242dac8537a78c78e);
+  background-position:  0 -99px;
+
+  /* 让search-ban里的input元素（行内非替换元素）垂直居中，line-height与height一致 */
+  line-height: 32px;
+}
+
+.top .topbar .bar-right .search-ban input {
+  
+  display: inline-block;
+  width: 120px;
+}
+
+/* 换一下placeholder的颜色 */
+.top .topbar .bar-right .search-ban input::placeholder {
+  color: #ccc;
 }
