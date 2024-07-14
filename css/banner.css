@@ -3,6 +3,7 @@
 }
 
 .banner .area {
+  position: relative;
   display: flex;
   
   height: 285px;
@@ -62,4 +63,70 @@
 .banner .area .area-left .dot-list .item.active,
 .banner .area .area-left .dot-list .item:hover {
   background-position: -16px -343px;
+}
+
+.banner .area .area-right {
+  position: absolute;
+  width: 254px;
+  /* 用公式给高度拉起来 */
+  top: 0;
+  bottom: 0;
+  /* 右侧区域盖在左侧区域1px上 */
+  right: -1px;
+
+  background: url(https://s2.music.126.net/style/web2/img/index/download.png?c0b13ef03b1b0d3beb5999f73d6ed9e4) no-repeat 0 0;
+}
+
+.banner .area .area-right .download-button {
+  display: block;
+  width: 215px;
+  height: 56px;
+  margin: 186px 0 0 19px;
+
+  text-indent: -9999px;
+}
+
+.banner .area .area-right .download-button:hover {
+  background: url(https://s2.music.126.net/style/web2/img/index/download.png?c0b13ef03b1b0d3beb5999f73d6ed9e4) no-repeat 0 -290px;
+}
+
+.banner .area .area-right .desc {
+  margin-top: 10px;
+  text-align: center;
+
+  color: #8d8d8d;
+}
+
+.banner .area .control {
+  position: absolute;
+  /* 垂直居中 */
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+
+  display: block;
+  width: 37px;
+  height: 63px;
+
+  background-image: url(https://s2.music.126.net/style/web2/img/index/banner.png?2dc549c67b6cb5e714599c49ba35fe87);
+}
+
+.banner .area .control.control-left {
+  /* 让按钮在整个area的外面，用定位负值实现 */
+  left: -70px;
+  background-position: 0 -360px;
+}
+
+.banner .area .control.control-left:hover {
+  background-position: 0 -430px;
+}
+
+.banner .area .control.control-right {
+  /* 让按钮在整个area的外面，用定位负值实现 */
+  right: -70px;
+  background-position: 0 -508px
+}
+
+.banner .area .control.control-right:hover {
+  background-position: 0 -578px;
 }
