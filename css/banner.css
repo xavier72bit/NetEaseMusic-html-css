@@ -1,0 +1,65 @@
+.banner {
+  background: url(https://p1.music.126.net/xtPTlmDBnpT50R0ZU_bvmQ==/109951169778833194.jpg?imageView&blur=40x20) center center / 6000px;
+}
+
+.banner .area {
+  display: flex;
+  
+  height: 285px;
+}
+
+.banner .area .area-left {
+  position: relative;
+
+  width: 730px;
+}
+
+.banner .area .area-left .img-list{
+  display: flex;
+
+  overflow: hidden;
+}
+
+.banner .area .area-left .img-list .item {
+  width: 730px;
+
+  /* 禁用自动缩放 */
+  flex-shrink: 0;
+}
+
+.banner .area .area-left .img-list .item img {
+  /* 防止基线对齐 */
+  display: block;
+
+  width: 100%;
+}
+
+.banner .area .area-left .dot-list {
+  position: absolute;
+  bottom: 5px;
+  /* 让dot-list宽度与area-left一致 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  display: flex;
+  /* 让点都居中 */
+  justify-content: center;
+}
+
+.banner .area .area-left .dot-list li {
+  margin: 0 2px;
+}
+
+.banner .area .area-left .dot-list .item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(https://s2.music.126.net/style/web2/img/index/banner.png?2dc549c67b6cb5e714599c49ba35fe87) no-repeat;
+  background-position: 3px -343px;
+}
+
+.banner .area .area-left .dot-list .item.active,
+.banner .area .area-left .dot-list .item:hover {
+  background-position: -16px -343px;
+}
