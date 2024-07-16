@@ -1,0 +1,47 @@
+.main .area {
+  display: flex;
+  justify-content: space-between;
+
+  border: solid #d3d3d3;
+  border-width: 0 1px;
+  min-height: 700px;
+  background: url(https://s2.music.126.net/style/web2/img/frame/wrap1.png?242c61d67b776e085d45aef9f27b6779) repeat-y 100% 100%;
+}
+
+.main .area .area-left {
+  width: 729px;
+}
+
+.main .area .area-right {
+  width: 250px;
+}
+
+.main .area .area-right .user-login {
+  width: 250px;
+  height: 126px;
+  background: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff) no-repeat 0 0;
+}
+
+.main .area .area-right .user-login .desc {
+  width: 205px;
+  padding: 16px 0;
+  margin: 0 auto;
+  
+  color: #666;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.main .area .area-right .user-login .btn {
+  display: block;
+
+  width: 100px;
+  height: 31px;
+  margin: 0 auto;
+  background: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff) no-repeat -110px -195px;
+
+  color: #fff;
+  line-height: 31px;
+  text-align: center;
+}
+
