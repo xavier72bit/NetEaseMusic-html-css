@@ -25,3 +25,27 @@
   height: 19px;
   background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e52adade1f4df5e242dac8537a78c78e) -190px 0;
 }
+
+/* 主界面中标题栏公共部分样式，html元素的标准结构：
+  .top_title_type01>h3.title+a.more[href=#]
+*/
+.top_title_type01 {
+  display: flex;
+  justify-content: space-between;
+
+  
+  border-bottom: 1px solid #ccc;
+}
+
+.top_title_type01 .title {
+  color: #333;
+}
+
+.top_title_type01 .more {
+  color: #666;
+
+}
+
+.top_title_type01 .more:hover {
+  text-decoration: underline;
+}

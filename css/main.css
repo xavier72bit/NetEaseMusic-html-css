@@ -45,3 +45,14 @@
   text-align: center;
 }
 
+.main .area .area-right .resident-singer {
+  width: 250px;
+  margin-top: 15px;
+}
+
+
+/* 在这里我们增加此处的特殊样式 */
+.main .area .area-right .resident-singer .top-title {
+  height: 23px;
+  margin: 0 20px;
+}
