@@ -49,3 +49,60 @@
 .top_title_type01 .more:hover {
   text-decoration: underline;
 }
+
+/* 主界面中标题栏公共部分样式，这里是第二种，html元素的标准结构：
+  .top_title_02>.icon_music+.content>a.title_btn[href=#]+a.more_btn[href=#]{更多}
+*/
+.top_title_type02 {
+  display: flex;
+  position: relative;
+
+  height: 35px;
+  border-bottom: 2px solid #c10d0c;
+  box-sizing: border-box;
+  /* 这里是小箭头伪元素的大小+定位的right属性值 */
+  padding-right: 32px;
+}
+
+.top_title_type02 .icon_music {
+  height: 33px;
+  width: 33px;
+
+  background: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff) no-repeat -225px -156px;
+}
+
+.top_title_type02 .content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_title_type02::after {
+  /* top-title最右侧的小箭头图标，记得善用伪元素，子绝父相，将其定位到指定位置上 */
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto 0;
+  right: 20px;
+
+  width: 12px;
+  height: 12px;
+  background: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff) no-repeat 0 -240px;
+}
+
+.top_title_type02 .title_btn {
+  font-size: 20px;
+  color: #000;
+}
+
+.top_title_type02 .more_btn {
+  font-size: 12px;
+  color: #666;
+  line-height: 33px;
+}
+
+.top_title_type02 .more_btn:hover {
+  text-decoration: underline;
+}

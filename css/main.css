@@ -10,6 +10,26 @@
 
 .main .area .area-left {
   width: 729px;
+  padding: 20px 20px 40px;
+}
+
+.main .area-left .hot-recommend-seciton .categoly-list {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  
+  padding-bottom: 5px;
+  margin-left: 15px;
+}
+
+.main .area-left .hot-recommend-seciton .categoly-list .item {
+  display: block;
+  color: #666;
+  margin: 10px;
+}
+
+.main .area-left .hot-recommend-seciton .categoly-list .item:hover {
+  text-decoration: underline;
 }
 
 .main .area .area-right {
@@ -49,7 +69,6 @@
   width: 250px;
   margin-top: 15px;
 }
-
 
 /* 在这里我们增加此处的特殊样式 */
 .main .resident-singer .top-title {
