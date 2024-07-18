@@ -10,8 +10,9 @@ body, h1, ul, li, p, h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
+a, i{
   text-decoration: none;
+  font-style: normal;
 }
 
 ul, li, ol {

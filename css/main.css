@@ -94,3 +94,31 @@
   font-size: 12px;
   color: #666;
 }
+
+.main .resident-singer .apply-btn {
+  display: block;
+  width: 210px;
+  height: 31px;
+  margin: 0 auto;
+
+  line-height: 31px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  box-sizing: border-box;
+  color: #000;
+  /* i元素会把apply-btn完全盖上，所以要有个padding-right，把右侧的bgi按钮封露出来 */
+  padding-right: 5px;
+
+  background: url(https://s2.music.126.net/style/web2/img/button2.png?4bf317ee6cb33fbee180e28daf7eb1fb) right -182px;
+}
+
+.main .resident-singer .apply-btn > i {
+  display: block;
+  height: 31px;
+  
+  /* 为了让按钮中的文字居中，就要左侧也有个padding */
+  padding-left: 5px;
+
+  background: url(https://s2.music.126.net/style/web2/img/button2.png?4bf317ee6cb33fbee180e28daf7eb1fb) 0 -59px;
+}
