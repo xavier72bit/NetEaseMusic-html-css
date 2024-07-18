@@ -122,3 +122,51 @@
 
   background: url(https://s2.music.126.net/style/web2/img/button2.png?4bf317ee6cb33fbee180e28daf7eb1fb) 0 -59px;
 }
+
+.main .popular-anchors .top-title {
+  height: 23px;
+  margin: 20px 20px;
+}
+
+.main .popular-anchors .anchors-list > li {
+  margin: 10px auto;
+}
+
+.main .popular-anchors .anchors-list .item {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 210px;
+  height: 40px;
+  margin: 0 auto;
+
+}
+
+.main .anchors-list .item .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding-left: 10px;
+
+  overflow: hidden;
+}
+
+.main .anchors-list .item .info .anchor {
+  font-size: 12px;
+  color: #000;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main .anchors-list .item .info .desc {
+  font-size: 12px;
+  color: #666;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
