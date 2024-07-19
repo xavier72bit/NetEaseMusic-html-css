@@ -32,6 +32,101 @@
   text-decoration: underline;
 }
 
+.main .area-left .hot-recommend-seciton .main-content-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 20px 5px;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item {
+  width: 140px;
+
+  margin: 10px 0;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .top {
+  position: relative;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .top img {
+  display: block;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .top .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-position: 0 0;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .top .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 27px;
+  padding-left: 10px;
+  line-height: 27px;
+
+  font-size: 12px;
+  color: #ccc;
+  background-position: 0 -537px;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .top .info .icon-music {
+  position: relative;
+  top: 2px;
+
+  display: inline-block;
+  width: 14px;
+  height: 11px;
+
+  background-position: 0 -24px;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .top .info .count {
+  margin-left: 4px;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .top .info .icon-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+
+  display: inline-block;
+  margin: auto;
+  width: 16px;
+  height: 17px;
+
+  background-position: 0 0;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .bottom {
+  display: block;
+  margin-top: 8px;
+
+  font-size: 14px;
+  color: #333;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .bottom:hover {
+  text-decoration: underline;
+}
+
+.main .area-left .hot-recommend-seciton .main-content-list .item .bottom .icon-radio-program {
+  width: 35px;
+  height: 15px;
+
+  background-position: -31px -658px;
+}
+
 .main .area .area-right {
   width: 250px;
 }
@@ -168,7 +263,8 @@
   justify-content: space-around;
 
   padding-left: 10px;
-
+  
+  /* 这里必须要设置此属性，不然info里的desc元素的文字超出省略号的效果会失效，此处为flex布局与white-space: nowrap属性的冲突 */
   overflow: hidden;
 }
 
@@ -176,6 +272,7 @@
   font-size: 12px;
   color: #000;
 
+  /* 这么设置了，要在flex-container里加上overflow: hidden，要不然失效了 */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -185,6 +282,7 @@
   font-size: 12px;
   color: #666;
 
+  /* 这么设置了，要在flex-container里加上overflow: hidden，要不然失效了 */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
