@@ -134,3 +134,10 @@ body {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
+.footer_func_sprite_img {
+  background-image: url(https://s2.music.126.net/style/web2/img/foot_enter_new2.png?52ee046b5725a64038d6d7c6264f14d7);
+  background-size: 220px 220px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
