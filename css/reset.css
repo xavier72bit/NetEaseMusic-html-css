@@ -2,7 +2,7 @@
 * 重置一些浏览器自己加的样式
 */
 
-body, h1, ul, li, p, h1, h2, h3 {
+body, h1, ul, li, p, h1, h2, h3, dl, dt, dd {
   margin: 0;
   padding: 0;
 

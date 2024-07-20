@@ -245,6 +245,185 @@
   background-position: -320px -75px
 }
 
+.main .area-left .rankings-seciton .ranking-table {
+  display: flex;
+
+  height: 472px;
+  margin-top: 20px;
+
+  background: url(https://s2.music.126.net/style/web2/img/index/index_bill.png?d165e7a265cec257d819094b51085fd0) no-repeat 0 0;
+}
+
+.main .area-left .ranking-table .rank-list {
+  width: 230px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header {
+  display: flex;
+
+  height: 120px;
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .album {
+  position: relative;
+
+  width: 80px;
+  height: 80px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .album > img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .album .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: block;
+
+  background-position: -145px -57px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .info .title {
+  padding: 15px;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .info .title:hover {
+  text-decoration: underline;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .info .icons {
+  display: flex;
+  padding: 15px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .info .icons > a {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .icon-play {
+  background-position: -267px -205px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .icon-play:hover {
+  background-position: -267px -235px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .icon-collect {
+  margin-left: 10px;
+  background-position: -300px -205px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-header .icon-collect:hover {
+  background-position: -300px -235px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item {
+  display: flex;
+  
+  height: 32px;
+  padding: 0 10px;
+
+  line-height: 32px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-no {
+  width: 35px;
+  text-align: center;
+
+  font-size: 16px;
+  color: #666;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item:nth-child(-n+3) .music-no {
+  width: 35px;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 800;
+  color: #c10d0c;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-name {
+  flex: 1;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  color: #000;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-name:hover {
+  text-decoration: underline;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations {
+  display: none;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item:hover .music-operations {
+  display: flex;
+  align-items: center;
+  width: 82px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations > a {
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations .icon-play {
+  background-position: -267px -268px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations .icon-play:hover {
+  background-position: -267px -288px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations .icon-add {
+  background-position: 2px -698px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations .icon-add:hover {
+  background-position: -20px -698px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations .icon-collect {
+  background-position: -297px -268px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .item .music-operations .icon-collect:hover {
+  background-position: -297px -288px;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .see-all {
+  display: block;
+  height: 32px;
+  padding-right: 25px;
+
+  line-height: 32px;
+  color: #000;
+  text-align: right;
+}
+
+.main .area-left .ranking-table .rank-list .rank-list-content .see-all:hover {
+  text-decoration: underline;
+}
+
 .main .area .area-right {
   width: 250px;
 }

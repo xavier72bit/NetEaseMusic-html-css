@@ -3,6 +3,10 @@
 * 通过类选择器来定义样式，哪个HTML元素需要这些样式，在它们的class属性中添加这个类即可
 */
 
+body {
+  background-color: #f5f5f5;
+}
+
 .wrapper_01 {
   /* 宽度为1190的内容包裹，水平居中显示 */
   width: 1190px;
@@ -25,8 +29,6 @@
   height: 19px;
   background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e52adade1f4df5e242dac8537a78c78e) -190px 0;
 }
-
-
 
 /* 主界面中标题栏公共部分样式，html元素的标准结构：
   .top_title_type01>h3.title+a.more[href=#]
