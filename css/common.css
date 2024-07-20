@@ -26,6 +26,8 @@
   background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?e52adade1f4df5e242dac8537a78c78e) -190px 0;
 }
 
+
+
 /* 主界面中标题栏公共部分样式，html元素的标准结构：
   .top_title_type01>h3.title+a.more[href=#]
 */
@@ -68,7 +70,7 @@
   height: 33px;
   width: 33px;
 
-  background: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff) no-repeat -225px -156px;
+  background-position: -225px -156px;
 }
 
 .top_title_type02 .content {
@@ -109,15 +111,24 @@
 
 .album_sprite_img {
   background-image: url(https://s2.music.126.net/style/web2/img/coverall.png?a7ac27146c273c9d0cf0e901e83f018d);
+  background-repeat: no-repeat;
   display: inline-block;
 }
 
 .sprite_icon_01 {
   background-image: url(https://s2.music.126.net/style/web2/img/iconall.png?4101b23bb530e7df13387752281bac68);
+  background-repeat: no-repeat;
   display: inline-block;
 }
 
 .sprite_icon_02 {
   background-image: url(https://s2.music.126.net/style/web2/img/icon.png?545196ad90061f04fe98daa4bb082e11);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.main_sprite_img {
+  background-image: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff);
+  background-repeat: no-repeat;
   display: inline-block;
 }

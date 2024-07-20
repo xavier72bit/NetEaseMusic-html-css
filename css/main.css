@@ -11,6 +11,8 @@
 .main .area .area-left {
   width: 729px;
   padding: 20px 20px 40px;
+  /* 明确指定了宽度，一定要防止内容超出！ */
+  box-sizing: border-box;
 }
 
 .main .area-left .hot-recommend-seciton .categoly-list {
@@ -127,6 +129,122 @@
   background-position: -31px -658px;
 }
 
+.main .new-music-seciton .music-list-banner {
+  height: 186px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  border: 1px solid #d3d3d3;
+}
+
+.main .new-music-seciton .music-list-banner .content {
+  position: relative;
+
+  height: 100%;
+  padding: 0 20px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+
+  background-color: #f5f5f5;
+}
+
+.main .new-music-seciton .music-list-banner .banner-roll-area {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.main .new-music-seciton .music-list-banner .banner-roll-area .roll-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 为了实现轮播，不要让flex-item自动压缩 */
+  flex-shrink: 0;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main .new-music-seciton .music-list-banner .banner-roll-area .roll-item .item {
+  width: 118px;
+  height: 150px;
+
+  background-position: -260px 100px;
+}
+
+.main .new-music-seciton .roll-item .item .disc {
+  position: relative;
+
+  display: block;
+  width: 118px;
+  height: 100px;
+
+  background-position: 0 -570px;
+}
+
+.main .new-music-seciton .roll-item .item .disc .cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background-position: 0 -570px;
+}
+
+.main .new-music-seciton .roll-item .item .disc:hover .icon-play {
+  position: absolute;
+  right: 25px;
+  bottom: 5px;
+
+  width: 22px;
+  height: 22px;
+  
+  background-position: 0 -110px;
+}
+
+.main .new-music-seciton .roll-item .item .disc-info {
+  display: block;
+  padding-right: 10px;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main .new-music-seciton .roll-item .item .disc-name {
+  margin-top: 8px;
+  color: #000;
+}
+
+.main .new-music-seciton .roll-item .item .disc-singer {
+  margin-top: 5px;
+  color: #666;
+}
+
+.main .new-music-seciton .roll-item .item .disc-info:hover {
+  text-decoration: underline;
+}
+
+.main .new-music-seciton .content .control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 17px;
+  height: 17px;
+  margin: auto 0;
+}
+
+.main .new-music-seciton .content .control-left {
+  left: 3px;
+  background-position: -280px -75px;
+}
+
+.main .new-music-seciton .content .control-right {
+  right: 3px;
+  background-position: -320px -75px
+}
+
 .main .area .area-right {
   width: 250px;
 }
@@ -134,7 +252,7 @@
 .main .user-login {
   width: 250px;
   height: 126px;
-  background: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff) no-repeat 0 0;
+  background-position: 0 0;
 }
 
 .main .user-login .desc {
@@ -153,7 +271,7 @@
   width: 100px;
   height: 31px;
   margin: 0 auto;
-  background: url(https://s2.music.126.net/style/web2/img/index/index.png?4fd2f01c85e32bea92f52c1b7834e7ff) no-repeat -110px -195px;
+  background-position: -110px -195px;
 
   color: #fff;
   line-height: 31px;
